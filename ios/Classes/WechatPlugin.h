@@ -1,5 +1,6 @@
 #import <Flutter/Flutter.h>
-#include "WXApi.h"
+#import <wechat/WXApi.h>
+//#include "WXApi.h"
 
 @interface WechatPlugin : NSObject<FlutterPlugin, WXApiDelegate>
 @end
