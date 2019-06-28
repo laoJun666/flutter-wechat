@@ -13,15 +13,22 @@ Wechat SDK for Flutter App.
   s.author           = { 'Pan Tao' => '54778899@qq.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
+  s.vendored_libraries = 'Classes/wechatSDk/*.{a}'
   #s.public_header_files = 'Classes/**/*.h'
-  s.static_framework = false
+  # s.static_framework = false
   
   s.dependency 'Flutter'
-  s.dependency 'WechatOpenSDK'
+  # s.dependency 'WechatOpenSDK'
 
   s.frameworks = ["SystemConfiguration", "CoreTelephony"]
   s.libraries = ["z", "sqlite3.0", "c++"]
 
   s.ios.deployment_target = '8.0'
+
+  spec.subspec 'WechatSDK' do |cs|
+       cs.source_files = 'Classes/wechatSDk/*.{h,m}'
+       cs.vendored_libraries = 'Classes/wechatSDk/*.{a}'
+  end
+
 end
 
