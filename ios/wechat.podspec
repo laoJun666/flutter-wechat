@@ -25,7 +25,7 @@ Wechat SDK for Flutter App.
 
   s.ios.deployment_target = '8.0'
 
-  spec.subspec 'WechatSDK' do |cs|
+  s.subspec 'WechatSDK' do |cs|
        cs.source_files = 'Classes/wechatSDk/*.{h,m}'
        cs.vendored_libraries = 'Classes/wechatSDk/*.{a}'
   end
